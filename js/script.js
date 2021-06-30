@@ -1,5 +1,5 @@
 // Variabile fissa
-var pswEnding = 21;
+var pswEnding = '21';
 
 // Recuperiamo i dati dell'utente
 var firstName = prompt('What is your first name?', 'Thomas');
@@ -12,7 +12,7 @@ var generatedPsw = firstName + lastName + favColour + pswEnding;
 // Creiamo una variabile per recuperare l'elemento HTML
 var passwordPlacheholder = document.getElementById('password');
 
-// Inseriamo la password nell'elemento HTML selezionato
+// Inseriamo la password generata nell'elemento HTML selezionato
 passwordPlacheholder.innerHTML = generatedPsw;
 
 // console.log(firstName);
